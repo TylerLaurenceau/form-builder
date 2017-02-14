@@ -10,7 +10,7 @@ function getInfo(data) {
   for (i=0; i < data.length; i++){
     if (data[i].type === "text" || data[i].type === "email" || data[i].type === "tel"){
 $(".content").append(`<div><i class = "fa ${data[i].icon}"></i>
-<input type= text "${data[i].label}" placeholder = "${data[i].label}" size = "50"></div>`)
+<input type= text "${data[i].label}" placeholder = "${data[i].label}" size = "65"></div>`)
 }
   else if (data[i].type === "select"){
     $(".content").append(`<div><select>
@@ -18,10 +18,11 @@ $(".content").append(`<div><i class = "fa ${data[i].icon}"></i>
       <option value = "English">English</option>"
       <option value = "Spanish">Spanish</option>"
       <option value = "French">French</option>"
-      <option value = "Japanese">Japanese</option>"`)
+      <option value = "Japanese">Japanese</option>"</div>`)
       }
       else if (data[i].type === "textarea"){
-        $(".content").append(`<div><i class = "fa ${data[i].icon}"></i><textarea rows="4" cols="50"> </textarea> </div>`)
+        $(".content").append(`<div><i class = "fa ${data[i].icon}"></i>
+        <textarea placeholder="Your comment" rows="4" cols="64"></textarea></div>`)
       }
     }
   }

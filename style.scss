@@ -8,7 +8,9 @@
 	width: 550px;
 	margin-left: 350px;
 	margin-top: 35px;
-
+	border: grey solid 1px;
+	border-radius: 3px;
+	margin-bottom: 20px;
 }
 
 
@@ -21,24 +23,44 @@
 
 .content{
 
-div{
-	text-align: center;
-	margin-top: 25px;
-	margin-bottom: 15px;
-	position:relative;
+  div{
+	  text-align: center;
+	  margin-top: 25px;
+	  margin-bottom: 15px;
+	  position:relative;
 
 	i.fa{
 		position:absolute;
-		left:63px;
-		top:2px;
+		left:38px;
+		top:12px;
+		font-size: 12px;
+		color:lightgrey;
 	}
 
 	input{
-			padding-left: 20px;
-
+			padding-left: 26px;
+			font-size: 14px;
+			border-radius: 3px;
+			line-height: 30px;
+			border: 2px solid lightgrey;
 
 		}
 	}
+}
+
+textarea {
+	padding-left: 26px;
+	font-size: 14px;
+	border-radius: 3px;
+	line-height: 30px;
+	border: 2px solid lightgrey;
+}
+
+select {
+	width:495px;
+	border: solid lightgrey 2px;
+	height: 40px;
+	background:white;
 }
 
 .footer{
